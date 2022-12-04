@@ -79,7 +79,7 @@ export default function App() {
     setPlayerStats(result);
     setStatsLabel(
       `Showing ${selectedStatistic.toLowerCase()} statistics for player ${
-        players.find(p => p?.playerId == selectedPlayer)?.playerName
+        players.find(p => p?.playerId === selectedPlayer)?.playerName
       }${selectedYear !== "NONE" ? ` in the year ${selectedYear}` : ""}${
         selectedTeam >= 0
           ? ` against the opponent ${
